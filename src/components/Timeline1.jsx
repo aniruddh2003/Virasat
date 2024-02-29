@@ -28,7 +28,12 @@ function Timeline1() {
           Events Schedule
         </h1>
       </div>
-      <div className="timeline">
+      <div className="timeline flex flex-col gap-10">
+        <div className="-mt-16 bg-[#dab81d] p-2">
+          <h1 className="text-3xl ">Cinema Classics</h1>
+          <h1 className="text-3xl ">(1st - 3rd March)</h1>
+          <h1 className="text-3xl ">6pm - 9pm</h1>
+        </div>
         <VerticalTimeline lineColor="black">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -129,6 +134,38 @@ function Timeline1() {
               date="3rd March 2024"
             />
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            icon={<Workicon img_src={end} />}
+            iconStyle={{
+              boxShadow: "0 0 6px 4px black",
+              background: "white",
+              padding: "0.3em",
+              backgroundColor: "#32a852",
+              marginTop: "3rem",
+            }}
+          ></VerticalTimelineElement>
+        </VerticalTimeline>
+        <div className="mt-4 bg-[#dab81d] p-2">
+          <h1 className="text-3xl ">Concerts</h1>
+          <h1 className="text-3xl ">(4th - 8th March)</h1>
+          <h1 className="text-3xl ">6pm - 9pm</h1>
+        </div>
+        <VerticalTimeline lineColor="black">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            icon={<Workicon img_src={start} />}
+            iconStyle={{
+              boxShadow: "0 0 6px 4px black",
+              display: "flex",
+              padding: "0.3em",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              background: "#32a852",
+              marginTop: "-2rem",
+            }}
+          ></VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
@@ -323,6 +360,37 @@ function Timeline1() {
               date="8th March 2024"
             />
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            icon={<Workicon img_src={end} />}
+            iconStyle={{
+              boxShadow: "0 0 6px 4px black",
+              background: "white",
+              padding: "0.3em",
+              backgroundColor: "#32a852",
+              marginTop: "3rem",
+            }}
+          ></VerticalTimelineElement>
+        </VerticalTimeline>
+        <div className="mt-4 bg-[#dab81d] p-2">
+          <h1 className="text-3xl ">Intensive</h1>
+          <h1 className="text-3xl ">(9th - 14th March)</h1>
+        </div>
+        <VerticalTimeline lineColor="black">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            icon={<Workicon img_src={start} />}
+            iconStyle={{
+              boxShadow: "0 0 6px 4px black",
+              display: "flex",
+              padding: "0.3em",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+              background: "#32a852",
+              marginTop: "-2rem",
+            }}
+          ></VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
