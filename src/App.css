@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Inter&family=Parisienne&family=Lato&family=Merienda+One&family=Lato&family=Roboto+Slab:wght@500&family=Outfit:wght@800&family=Rubik&family=Rubik+Vinyl&family=Work+Sans&display=swap');
+.App {
+  text-align: center;
+  font-family: 'Merienda', cursive;
+  background-size: cover;
+  height: fit-content;
+  background-repeat: no-repeat;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/* -----------------Utility Classes------------- */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------Navbar Styling--------------- */
+nav {
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.507);
+  font-family: 'Work Sans', sans-serif;
+}
+.nav-item{
+  padding: 0.5em;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.items{
+  font-family: 'Lato',serif;
+  display: flex;
+}
+.collapse {
+  position: relative;
+}
+.logo{
+  width: 25%;
+  padding-top: 1rem;
+}
+/* --------------END------------ */
+/* ------------------Container Styling---------- */
+.heading {
+  text-align: center;
+  font-size: max(30px,4vw);
+}
+.container-fluid[id='main'] {
+  position: relative;
+  /* width: 70%; */
+}
+
+.main-body {
+  color: white;
+}
+.card {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+  color: black;
+}
+
+.left {
+  position: relative;
+  left: -10%;
+}
+
+.right {
+  position: relative;
+  left: 60%;
+}
+
+/* ----------------------------- */
+
+/* ---------------- END ---------------*/
+
+.time{
+  font-size: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.artist-icon {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 120px;
+  border-radius: 50%;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 2px 4px white,0 0 2px 5px rgba(131,58,180,1),0 0 2px 6px rgba(253,29,29,1),0 0 2px 7px rgba(252,176,69,1);
+}
+
+.name {
+  font-weight: 800;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* ------------------ Title Styling ------------------- */
+.virasat{
+  font-size: max(60px,8vw);
+  font-family: 'Parisienne', cursive;
+  font-weight: 1000;
+  background: linear-gradient(
+    brown,
+    black
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.date{
+  font-size: max(30px,4vw);
+  font-family: 'Luxurious Roman', cursive;
+  font-weight: 1000;
+  margin-top: -1.5rem;
+  background: linear-gradient(
+    brown,
+    black
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* ************************** END *********************** */
+
+
+/*-------------------------- Media Queries -------------------------- */
+@media(max-width:1173px){
+  .artist-icon{
+    position: static;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(0%);
+  }
+}
+@media(max-width:460px){
+  .nav-lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .items{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media(min-width:1174px){
+  .about-artist{
+    padding-block-start: 3em;
+  }
+}
+
+/*+++++++++++++++++++++ Footer Styling +++++++++++++++++++*/
+.contacts{
+  font-weight: 500;
+}

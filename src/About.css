@@ -1,0 +1,7 @@
+.heading{
+    font-size: max(30px,4vw);
+    padding: 1em;
+}
+.about-content{
+    font-size: max(20px,2vw);
+}
