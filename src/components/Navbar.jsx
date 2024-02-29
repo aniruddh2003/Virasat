@@ -34,7 +34,7 @@ function Navbar2() {
         </Navbar.Collapse>
       </Container>
       <a
-        href=""
+        href="https://spicmacay.vercel.app/team"
         target="_blank"
         className="bg-purple-600 p-2 visited:text-neutral-50 visited:no-underline hover:no-underline no-underline text-xs cursor-pointer rounded-xl white:hover:text-neutral-400 white:focus:text-neutral-400 text-white fixed right-8 bottom-8 z-20"
         style={{
